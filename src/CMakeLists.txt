@@ -36,7 +36,6 @@ set(NNXX_SRCS   ./nnxx/error.cpp
 
 set(NNXX_HDRS   ./nnxx/socket
                 ./nnxx/message
-                ./nnxx/ext/nnxx_ext.h
                 ./nnxx/bus.h
                 ./nnxx/chrono.h
                 ./nnxx/error.h
@@ -71,3 +70,4 @@ target_link_libraries(${PROJECT_NAME} PUBLIC nanomsg)
 
 install(TARGETS ${PROJECT_NAME} DESTINATION lib)
 install(FILES ${NNXX_HDRS} DESTINATION include/nnxx)
+install(FILES ./nnxx/ext/nnxx_ext.h DESTINATION include/nnxx/ext)
