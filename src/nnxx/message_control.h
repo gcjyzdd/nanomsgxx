@@ -25,7 +25,7 @@
 #ifndef NNXX_MESSAGE_CONTROL_H
 #define NNXX_MESSAGE_CONTROL_H
 
-#include <nanomsg/ext/nnxx_ext.h>
+#include <nnxx/ext/nnxx_ext.h>
 
 namespace nnxx {
 

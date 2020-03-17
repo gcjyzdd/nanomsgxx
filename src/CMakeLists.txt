@@ -16,7 +16,7 @@ IF(!nanomsg_FOUND)
 ENDIF()
 
 
-set(NANOMSG_SRCS ./nanomsg/ext/nnxx_ext.c)
+set(NANOMSG_SRCS ./nnxx/ext/nnxx_ext.c)
 
 set(NNXX_SRCS   ./nnxx/error.cpp
                 ./nnxx/message.cpp
@@ -34,7 +34,9 @@ set(NNXX_SRCS   ./nnxx/error.cpp
                 ./nnxx/tcp.cpp
                 ./nnxx/timeout.cpp)
 
-set(NNXX_HDRS   ./nanomsg/ext/nnxx_ext.h
+set(NNXX_HDRS   ./nnxx/socket
+                ./nnxx/message
+                ./nnxx/ext/nnxx_ext.h
                 ./nnxx/bus.h
                 ./nnxx/chrono.h
                 ./nnxx/error.h
@@ -43,9 +45,12 @@ set(NNXX_HDRS   ./nanomsg/ext/nnxx_ext.h
                 ./nnxx/message.h
                 ./nnxx/message_control.h
                 ./nnxx/message_istream.h
+				./nnxx/message_istream.hpp
                 ./nnxx/message_iterator.h
                 ./nnxx/message_ostream.h
+				./nnxx/message_ostream.hpp
                 ./nnxx/message_streambuf.h
+				./nnxx/message_streambuf.hpp
                 ./nnxx/nn.h
                 ./nnxx/pair.h
                 ./nnxx/pipeline.h
@@ -53,6 +58,7 @@ set(NNXX_HDRS   ./nanomsg/ext/nnxx_ext.h
                 ./nnxx/pubsub.h
                 ./nnxx/reqrep.h
                 ./nnxx/socket.h
+				./nnxx/socket.hpp
                 ./nnxx/survey.h
                 ./nnxx/tcp.h
                 ./nnxx/timeout.h
