@@ -27,10 +27,12 @@
 
 namespace nnxx {
 
-  bool get_tcp_no_delay(const socket &s)
-  { return s.getopt<int>(SOCKET, TCP_NODELAY); }
+  bool get_tcp_no_delay(const socket &s) {
+  return s.getopt<int>(SOCKET, NX_TCP_NODELAY);
+}
 
-  void set_tcp_no_delay(socket &s, bool enable)
-  { s.setopt(SOCKET, TCP_NODELAY, static_cast<int>(enable)); }
+  void set_tcp_no_delay(socket &s, bool enable) {
+  s.setopt(SOCKET, NX_TCP_NODELAY, static_cast<int>(enable));
+}
 
 }

@@ -32,7 +32,7 @@ namespace nnxx {
   class socket;
 
   enum {
-    TCP_NODELAY = NN_TCP_NODELAY,
+    NX_TCP_NODELAY = NN_TCP_NODELAY,
   };
 
   bool get_tcp_no_delay(const socket &s);
