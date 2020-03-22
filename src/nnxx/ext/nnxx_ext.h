@@ -42,7 +42,7 @@ void nn_msgctl_term (struct nn_msgctl *ctl);
 
 int nn_msgctl_copy (struct nn_msgctl *to, const struct nn_msgctl *from);
 
-int nn_msgctl_cmp (const struct nn_msgctl *ctl1, const struct nn_msgctl *ctl2);
+int nn_msgctl_cmp(const struct nn_msgctl* msgctl, const struct nn_msgctl* ctl2);
 
 size_t nn_msgctl_hash (const struct nn_msgctl *ctl);
 
